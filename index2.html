@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+
 <head>
     <title> Blogs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./icomoon-styles.css">
     <link rel="stylesheet" type="text/css" href="./common-styles.css">
+    <link rel="stylesheet" type="text/css" href="./blog-common-card.css">
+    <link rel="stylesheet" type="text/css" href="./blog-big-card.css">
+    <link rel="stylesheet" type="text/css" href="./blog-small-card.css">
+
     <style>
         @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
 
@@ -27,7 +32,7 @@
             cursor: pointer;
         }
 
-        .blogs-page {
+        .blogs {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
@@ -81,12 +86,54 @@
 <body dir="rtl">
 
     <span class="icon-earth language" onclick="toggleLanguage()"></span>
-    <div class="blogs-page">
+    <div class="blogs">
         <div class="blogs-list">
             <h1 class="header-color">
                 المدونات الشائعة
             </h1>
-            <blog-card image="./images/kids-technology.jpg">
+            <div class="card-wrapper primary-text-color">
+                <img alt="blog image" src="./images/classroom.jpg" class="card-image" />
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="card-header-text header-color">طعام صلاة حب</h2>
+                        <span class="icon-bookmark primary-text-color"></span>
+                    </div>
+                    <p class="card-description">
+                        لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم
+                        ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم
+                        ابسوم
+
+                    </p>
+
+                    <div class="card-footer-wrapper">
+                        <div class="vr-align-center">
+                            <span class="icon-pencil hz-space-sm"></span>
+                            <span class="hz-space-sm">
+                                ياسمين وهر
+                                <span class="light-text-color"> في</span>
+
+                                التكنولوجيا
+                            </span>
+                        </div>
+
+                        <div style="display:flex; flex-wrap:wrap;" class="light-text-color">
+                            <div class="vr-align-center">
+                                <span class="icon-calendar hz-space-sm"></span>
+                                <span class="hz-space-sm">السبت, ١٦ أيار ٢٠٢٠ </span>
+
+                            </div>
+                            <span class="hz-space-sm vr-space-sm divider"></span>
+                            <div class="vr-align-center">
+                                <img alt="glasses icon" class="hz-space-sm" src="./images/my-glasses.svg" />
+                                <span class="hz-space-sm">٤ دقائق قراءة</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <blog-card name="Jane Doe" image="./images/kids-technology.jpg">
                 <div slot="header">٣ اتجاهات ستحكم مستقبل التكنولوجيا</div>
                 <div slot="description"> لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم
                     ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم
@@ -99,7 +146,7 @@
                 <div slot="reading-time">٥ دقائق قراءة</div>
                 <div slot="date">السبت, ١٦ أيار ٢٠٢٠</div>
             </blog-card>
-            <blog-card image="./images/default.jpg">
+            <blog-card name="Jane Doe" image="./images/default.jpg">
                 <div slot="header">٣ اتجاهات ستحكم مستقبل التكنولوجيا</div>
                 <div slot="description">
                     لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم ابسوم لوريم ابسوم لوريم ابسوم لوريم
@@ -121,22 +168,61 @@
                 المنشورات الأكثر إلهاماً
             </h2>
             <div style="display: flex;">
+
                 <div class="small-blogs-list">
-                    <blog-small-card image="./images/meeting.jpg">
+                    <div class="small-card-wrapper primary-text-color vr-align-center">
+                        <span class="card-number">١.</span>
+                        <img alt="blog image" src="./images/default.jpg" height="60" class="card-small-image" />
+                        <div class="small-card-content">
+                            <div style="display:flex; justify-content: space-between;align-items: center;">
+                                <h2 class="card-header-text header-color">٣ اتجاهات ستحكم مستقبل التكنولوجيا</h2>
+                            </div>
+
+
+                            <div>
+                                <div class="vr-align-center vr-space-sm">
+                                    <span class="icon-pencil hz-space-sm"></span>
+                                    <span class="hz-space-sm">
+                                        ياسمين وهر
+                                    </span>
+                                </div>
+
+                                <div style="display:flex; flex-wrap:wrap;" class="light-text-color">
+                                    <div class="vr-align-center">
+                                        <span class="icon-calendar hz-space-sm"></span>
+                                        <span class="hz-space-sm"> ١٦ أيار ٢٠٢٠ </span>
+
+                                    </div>
+                                    <span class="hz-space-sm divider"></span>
+                                    <div class="vr-align-center">
+                                        <img alt="glasses icon" class="hz-space-sm" src="./images/my-glasses.svg" />
+                                        <span class="hz-space-sm">٤ دقائق قراءة</span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <blog-small-card name="Jane Doe" image="./images/meeting.jpg">
                         <div slot="header">٣ اتجاهات ستحكم مستقبل التكنولوجيا</div>
                         <div slot="name">ياسمين وهر</div>
                         <div slot="reading-time">٥ دقائق قراءة</div>
                         <div slot="date">١٦ أيار ٢٠٢٠</div>
                         <div slot="card-number">٢.</div>
                     </blog-small-card>
-                    <blog-small-card image="./images/kids-technology.jpg">
+                    <blog-small-card name="Jane Doe" image="./images/kids-technology.jpg">
                         <div slot="header">٣ اتجاهات ستحكم مستقبل التكنولوجيا</div>
                         <div slot="name">ياسمين وهر</div>
                         <div slot="reading-time">٥ دقائق قراءة</div>
                         <div slot="date">١٦ أيار ٢٠٢٠</div>
                         <div slot="card-number">٣.</div>
                     </blog-small-card>
+
                 </div>
+
                 <div class="vr-bar-yellow">
                 </div>
             </div>
@@ -145,7 +231,7 @@
     </div>
     <script src="./CardFooter.js"></script>
 
-    <script src="./BlogBigCard.js"></script>
+    <script src="./BlogCard.js"></script>
 
     <script src="./BlogSmallCard.js"></script>
 
@@ -172,4 +258,6 @@
         setLanguageForCustomElements();
     }
 </script>
+
+
 </html>
