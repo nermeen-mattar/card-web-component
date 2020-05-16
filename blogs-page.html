@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Blogs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./icomoon-styles.css">
+    <link rel="stylesheet" type="text/css" href="./common-styles.css">
+    <link rel="stylesheet" type="text/css" href="./blog-common-card.css">
+    <link rel="stylesheet" type="text/css" href="./blog-big-card.css">
+    <link rel="stylesheet" type="text/css" href="./blog-small-card.css">
+
+    <style>
+        @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+
+        body {
+            font-size: 12px;
+            font-family: 'Droid Arabic Naskh', serif;
+            text-align: right;
+            padding: 0px 40px;
+            background-color: #fbfbfb;
+        }
+
+        body[dir=ltr] {
+            text-align: left;
+        }
+
+        .language {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .blogs {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .more-blogs {
+            color: #0693ff;
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .blogs-list {
+            flex: 1;
+            min-width: 450px;
+            /* min device width - iPhone 5*/
+            max-width: 750px;
+            margin: 0 40px;
+        }
+
+        .inspiring-blogs {
+            margin-top: 60px;
+        }
+
+        .small-blogs-list {
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+        @media only screen and (max-width: 500px) {
+            body {
+                padding: 0;
+            }
+
+            h1,
+            h2 {
+                text-align: center;
+            }
+
+            .blogs-list {
+                min-width: 300px;
+                /* because min device width - iPhone 5*/
+                margin: 0 40px;
+
+            }
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+
+    <span class="icon-earth language" onclick="toggleLanguage()"></span>
+    <div class="blogs">
+        <div class="blogs-list">
+            <h1 class="header-color">
+                المدونات الشائعة
+            </h1>
+            <div class="card-wrapper primary-text-color">
+                <img alt="blog image" src="./images/classroom.jpg" class="card-image" />
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="card-header-text header-color">طعام صلاة حب</h2>
+                        <span class="icon-bookmark primary-text-color"></span>
+                    </div>
+                    <p class="card-description">
+                        لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم
+                        ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم ابسوم لوريم
+                        ابسوم
+
+                    </p>
+
+                    <div class="card-footer-wrapper">
+                        <div class="vr-align-center">
+                            <span class="icon-pencil hz-space-sm"></span>
+                            <span class="hz-space-sm">
+                                ياسمين وهر
+                                <span class="light-text-color"> في</span>
+
+                                التكنولوجيا
+                            </span>
+                        </div>
+
+                        <div style="display:flex; flex-wrap:wrap;" class="light-text-color">
+                            <div class="vr-align-center">
+                                <span class="icon-calendar hz-space-sm"></span>
+                                <span class="hz-space-sm">السبت, ١٦ أيار ٢٠٢٠ </span>
+
+                            </div>
+                            <span class="hz-space-sm vr-space-sm divider"></span>
+                            <div class="vr-align-center">
+                                <img alt="glasses icon" class="hz-space-sm" src="./images/my-glasses.svg" />
+                                <span class="hz-space-sm">٤ دقائق قراءة</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <p class="more-blogs">المزيد من
+                المدونات الشائعة</a>
+
+        </div>
+
+        <div class="inspiring-blogs">
+            <h2 class="header-color">
+                المنشورات الأكثر إلهاماً
+            </h2>
+            <div style="display: flex;">
+
+                <div class="small-blogs-list">
+                    <div class="small-card-wrapper primary-text-color vr-align-center">
+                        <span class="card-number">١.</span>
+                        <img alt="blog image" src="./images/small-img.jpg" height="60" class="card-small-image" />
+                        <div class="small-card-content">
+                            <div style="display:flex; justify-content: space-between;align-items: center;">
+                                <h2 class="card-header-text header-color">٣ اتجاهات ستحكم مستقبل التكنولوجيا</h2>
+                            </div>
+
+
+                            <div>
+                                <div class="vr-align-center vr-space-sm">
+                                    <span class="icon-pencil hz-space-sm"></span>
+                                    <span class="hz-space-sm">
+                                        ياسمين وهر
+                                    </span>
+                                </div>
+
+                                <div style="display:flex; flex-wrap:wrap;" class="light-text-color">
+                                    <div class="vr-align-center">
+                                        <span class="icon-calendar hz-space-sm"></span>
+                                        <span class="hz-space-sm"> ١٦ أيار ٢٠٢٠ </span>
+
+                                    </div>
+                                    <span class="hz-space-sm divider"></span>
+                                    <div class="vr-align-center">
+                                        <img alt="glasses icon" class="hz-space-sm" src="./images/my-glasses.svg" />
+                                        <span class="hz-space-sm">٤ دقائق قراءة</span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vr-bar-yellow">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+    var lang = localStorage.getItem('lang') || 'ar';
+    var dir = lang === 'ar' ? 'rtl' : 'ltr'
+    document.body.setAttribute('dir', dir);
+
+    function toggleLanguage() {
+        lang = lang === 'ar' ? 'en' : 'ar';
+        dir = lang === 'ar' ? 'rtl' : 'ltr';
+        document.body.setAttribute('dir', dir);
+        localStorage.setItem('lang', lang);
+        setLanguageForCustomElements();
+    }
+</script>
+
+
+</html>
