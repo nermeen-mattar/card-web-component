@@ -1,5 +1,5 @@
 (() => {
-    const template = document.createElement('template');
+    const template = document.createElement("template");
     template.innerHTML = `
 <div>
 
@@ -46,10 +46,10 @@
 
             this.showInfo = true;
             this.attachShadow({
-                mode: 'open'
+                mode: "open"
             });
             this.shadowRoot.appendChild(template.content.cloneNode(true));
-            this.shadowRoot.querySelector('img').src = this.getAttribute('image');
+            this.shadowRoot.querySelector("img").src = this.getAttribute("image");
         }
 
         connectedCallback() {
@@ -59,5 +59,5 @@
         }
     }
 
-    window.customElements.define('blog-small-card', SmallBlogCard);
+    window.customElements.define("blog-small-card", SmallBlogCard);
 })();

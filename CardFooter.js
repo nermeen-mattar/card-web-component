@@ -1,5 +1,5 @@
 (() => {
-    const template = document.createElement('template');
+    const template = document.createElement("template");
     template.innerHTML = `
     <link rel="stylesheet" type="text/css" href="./assets/css/common-styles.css">       
     <link rel="stylesheet" type="text/css" href="./assets/css/icomoon-styles.css">
@@ -34,12 +34,12 @@
             super();
 
             this.attachShadow({
-                mode: 'open'
+                mode: "open"
             });
             this.shadowRoot.appendChild(template.content.cloneNode(true));
 
         }
     }
 
-    window.customElements.define('card-footer', CardFooter);
+    window.customElements.define("card-footer", CardFooter);
 })();

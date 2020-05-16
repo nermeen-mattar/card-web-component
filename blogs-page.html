@@ -81,23 +81,23 @@
 </body>
 
 <script>
-    var lang = localStorage.getItem('lang') || 'ar';
-    var dir = lang === 'ar' ? 'rtl' : 'ltr'
-    document.body.setAttribute('dir', dir);
+    var lang = localStorage.getItem("lang") || "ar";
+    var dir = lang === "ar" ? "rtl" : "ltr"
+    document.body.setAttribute("dir", dir);
     setLanguageForCustomElements();
 
     function setLanguageForCustomElements() {
-        var cards = document.getElementsByTagName('blog-small-card');
+        var cards = document.getElementsByTagName("blog-small-card");
         for (let i = 0; i < cards.length; i++) {
-            cards[i].shadowRoot.firstElementChild.setAttribute('dir', dir)
+            cards[i].shadowRoot.firstElementChild.setAttribute("dir", dir)
         }
     }
 
     function toggleLanguage() {
-        lang = lang === 'ar' ? 'en' : 'ar';
-        dir = lang === 'ar' ? 'rtl' : 'ltr';
-        document.body.setAttribute('dir', dir);
-        localStorage.setItem('lang', lang);
+        lang = lang === "ar" ? "en" : "ar";
+        dir = lang === "ar" ? "rtl" : "ltr";
+        document.body.setAttribute("dir", dir);
+        localStorage.setItem("lang", lang);
         setLanguageForCustomElements();
     }
 </script>

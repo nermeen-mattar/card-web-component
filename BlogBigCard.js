@@ -1,5 +1,5 @@
 (() => {
-const template = document.createElement('template');
+const template = document.createElement("template");
 template.innerHTML = `
 <div>
 
@@ -51,10 +51,10 @@ class BlogBigCard extends HTMLElement {
 
         this.showInfo = true;
         this.attachShadow({
-            mode: 'open'
+            mode: "open"
         });
         this.shadowRoot.appendChild(template.content.cloneNode(true));
-        this.shadowRoot.querySelector('img').src = this.getAttribute('image');
+        this.shadowRoot.querySelector("img").src = this.getAttribute("image");
     }
 
     connectedCallback() {
@@ -64,5 +64,5 @@ class BlogBigCard extends HTMLElement {
     }
 }
 
-window.customElements.define('blog-card', BlogBigCard);
+window.customElements.define("blog-card", BlogBigCard);
 })();
