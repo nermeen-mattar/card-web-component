@@ -3,45 +3,71 @@
 $yellow-color: #ffc543;
 $sm-space: 4px;
 
-.color-yellow {
-    background-color: $yellow-color;
-}
 
-.primary-text-color {
-    color: #666;
-}
+body {
+    font-size: 12px;
+    font-family: "Droid Arabic Naskh", serif;
+    text-align: right;
+    padding: 20px 40px;
+    background-color: #fbfbfb;
 
-.light-text-color {
-    color: #999;
-}
+    &[dir=ltr] {
+        text-align: left;
+    }
 
-.header-color {
-    color: #494d68;
-}
+    @media only screen and (max-width: 500px) {
+        padding: 0 !important;
 
-.divider {
-    width: 1px;
-    background-color: #bbb;
-}
+        h1,
+        h2 {
+            text-align: center;
+        }
+    }
 
-.hz-space-sm {
-    margin-left: $sm-space;
-    margin-right: $sm-space;
-}
+    .bg-color-yellow {
+        background-color: $yellow-color;
+    }
 
-.vr-space-sm {
-    margin-top: $sm-space;
-    margin-bottom: $sm-space;
-}
+    .color-yellow {
+        color: $yellow-color;
+    }
 
-.vr-align-center {
-    display: flex;
-    align-items: center;
-}
+    .primary-text-color {
+        color: #666;
+    }
 
-.vr-bar-yellow {
-    flex: 1;
-    background-color: $yellow-color;
-    width: 14px;
-    margin: 0px 12px;
+    .light-text-color {
+        color: #999;
+    }
+
+    .header-color {
+        color: #494d68;
+    }
+
+    .divider {
+        width: 1px;
+        background-color: #bbb;
+    }
+
+    .hz-space-sm {
+        margin-left: $sm-space;
+        margin-right: $sm-space;
+    }
+
+    .vr-space-sm {
+        margin-top: $sm-space;
+        margin-bottom: $sm-space;
+    }
+
+    .vr-align-center {
+        display: flex;
+        align-items: center;
+    }
+
+    .vr-bar-yellow {
+        flex: 1;
+        background-color: $yellow-color;
+        width: 14px;
+        margin: 0px 12px;
+    }
 }

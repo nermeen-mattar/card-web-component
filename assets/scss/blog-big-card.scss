@@ -39,7 +39,7 @@
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media (max-width: 576px) {
     .card__image {
         width: 100% !important;
         max-height: 200px;

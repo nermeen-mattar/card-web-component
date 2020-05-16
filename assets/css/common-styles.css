@@ -1,41 +1,55 @@
 @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
-.color-yellow {
+body {
+  font-size: 12px;
+  font-family: "Droid Arabic Naskh", serif;
+  text-align: right;
+  padding: 20px 40px;
+  background-color: #fbfbfb;
+}
+body[dir=ltr] {
+  text-align: left;
+}
+@media only screen and (max-width: 500px) {
+  body {
+    padding: 0 !important;
+  }
+  body h1,
+body h2 {
+    text-align: center;
+  }
+}
+body .bg-color-yellow {
   background-color: #ffc543;
 }
-
-.primary-text-color {
+body .color-yellow {
+  color: #ffc543;
+}
+body .primary-text-color {
   color: #666;
 }
-
-.light-text-color {
+body .light-text-color {
   color: #999;
 }
-
-.header-color {
+body .header-color {
   color: #494d68;
 }
-
-.divider {
+body .divider {
   width: 1px;
   background-color: #bbb;
 }
-
-.hz-space-sm {
+body .hz-space-sm {
   margin-left: 4px;
   margin-right: 4px;
 }
-
-.vr-space-sm {
+body .vr-space-sm {
   margin-top: 4px;
   margin-bottom: 4px;
 }
-
-.vr-align-center {
+body .vr-align-center {
   display: flex;
   align-items: center;
 }
-
-.vr-bar-yellow {
+body .vr-bar-yellow {
   flex: 1;
   background-color: #ffc543;
   width: 14px;

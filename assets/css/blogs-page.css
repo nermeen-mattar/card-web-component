@@ -1,13 +1,3 @@
-body {
-  font-size: 12px;
-  font-family: "Droid Arabic Naskh", serif;
-  text-align: right;
-  padding: 20px 40px;
-  background-color: #fbfbfb;
-}
-body[dir=ltr] {
-  text-align: left;
-}
 body .language {
   flex: 1;
   display: flex;
@@ -23,9 +13,15 @@ body .blogs-page {
 body .blogs-page .blogs-list {
   flex: 1;
   min-width: 450px;
-  /* min device width - iPhone 5*/
   max-width: 750px;
   margin: 0 40px;
+}
+@media (max-width: 500px) {
+  body .blogs-page .blogs-list {
+    min-width: 300px;
+    /* because min device width is 320px*/
+    margin: 0 40px;
+  }
 }
 body .blogs-page .more-blogs {
   color: #0693ff;
@@ -40,20 +36,6 @@ body .blogs-page .inspiring-blogs {
 body .blogs-page .small-blogs-list {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-}
-@media only screen and (max-width: 500px) {
-  body {
-    padding: 0;
-  }
-  body h1,
-body h2 {
-    text-align: center;
-  }
-  body .blogs-list {
-    min-width: 300px;
-    /* because min device width - iPhone 5*/
-    margin: 0 40px;
-  }
 }
 
 /*# sourceMappingURL=blogs-page.css.map */
