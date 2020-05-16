@@ -2,14 +2,11 @@
 const template = document.createElement("template");
 template.innerHTML = `
 <div>
-
-
 <link rel="stylesheet" type="text/css" href="./assets/css/icomoon-styles.css">
 <link rel="stylesheet" type="text/css" href="./assets/css/common-styles.css">    
-<link rel="stylesheet" type="text/css" href="./blog-common-card.css">
 <link rel="stylesheet" type="text/css" href="./assets/css/blog-big-card.css">
     <div class="card primary-text-color">
-        <img alt="blog image" src="../assets/images/default.jpg" class="card__image" />
+        <img alt="blog image" src="./assets/images/default.jpg" class="card__image" />
         <div class="card__content">
             <div class="card__header">
                 <h2 class="card__header__text header-color">
@@ -42,7 +39,6 @@ template.innerHTML = `
         </div>
     </div>
 </div>
-
 `;
 
 class BlogBigCard extends HTMLElement {
@@ -54,7 +50,10 @@ class BlogBigCard extends HTMLElement {
             mode: "open"
         });
         this.shadowRoot.appendChild(template.content.cloneNode(true));
-        this.shadowRoot.querySelector("img").src = this.getAttribute("image");
+        const cardImg = this.getAttribute("image");
+        if(cardImg) {
+            this.shadowRoot.querySelector("img").src = cardImg;
+        }
     }
 
     connectedCallback() {

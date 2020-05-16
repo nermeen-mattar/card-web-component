@@ -3,7 +3,6 @@
 $yellow-color: #ffc543;
 $sm-space: 4px;
 
-
 body {
     font-size: 12px;
     font-family: "Droid Arabic Naskh", serif;
@@ -23,51 +22,52 @@ body {
             text-align: center;
         }
     }
+}
 
-    .bg-color-yellow {
-        background-color: $yellow-color;
-    }
+.bg-color-yellow {
+    background-color: $yellow-color;
+}
 
-    .color-yellow {
-        color: $yellow-color;
-    }
+.color-yellow {
+    color: $yellow-color;
+}
 
-    .primary-text-color {
-        color: #666;
-    }
+.primary-text-color {
+    color: #666;
+}
 
-    .light-text-color {
-        color: #999;
-    }
+.light-text-color {
+    color: #999;
+}
 
-    .header-color {
-        color: #494d68;
-    }
+.header-color {
+    color: #494d68;
+}
 
-    .divider {
-        width: 1px;
-        background-color: #bbb;
-    }
+.divider {
+    width: 1px;
+    background-color: #bbb;
+}
 
-    .hz-space-sm {
-        margin-left: $sm-space;
-        margin-right: $sm-space;
-    }
+.hz-space-sm {
+    margin-left: $sm-space;
+    margin-right: $sm-space;
+}
 
-    .vr-space-sm {
-        margin-top: $sm-space;
-        margin-bottom: $sm-space;
-    }
+.vr-space-sm {
+    margin-top: $sm-space;
+    margin-bottom: $sm-space;
+}
 
-    .vr-align-center {
-        display: flex;
-        align-items: center;
-    }
+.vr-align-center {
+    display: flex;
+    align-items: center;
+}
 
-    .vr-bar-yellow {
-        flex: 1;
-        background-color: $yellow-color;
-        width: 14px;
-        margin: 0px 12px;
-    }
+.vr-bar-yellow {
+    flex: 1;
+    background-color: $yellow-color;
+    width: 14px;
+    margin: 0px 12px;
+
 }

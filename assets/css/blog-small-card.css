@@ -1,5 +1,4 @@
 .card {
-  width: 354px;
   width: 100%;
   border-bottom: 1px solid #ccc;
 }
@@ -18,8 +17,7 @@
   width: 35px;
   color: #aaa;
 }
-
-[dir=ltr] .card__content {
+.card [dir=ltr] .card__content {
   padding: 14px 0px 14px 14px;
 }
 

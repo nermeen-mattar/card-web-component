@@ -4,9 +4,8 @@
 <div>
 
 <link rel="stylesheet" type="text/css" href="./assets/css/icomoon-styles.css">
-<link rel="stylesheet" type="text/css" href="./assets/css/common-styles.css">       
- <link rel="stylesheet" type="text/css" href="./blog-common-card.css">
- <link rel="stylesheet" type="text/css" href="./assets/css/blog-small-card.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/common-styles.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/blog-small-card.css">
 
     <div class="card primary-text-color vr-align-center">
         <span class="card__number"> 
@@ -49,7 +48,11 @@
                 mode: "open"
             });
             this.shadowRoot.appendChild(template.content.cloneNode(true));
-            this.shadowRoot.querySelector("img").src = this.getAttribute("image");
+            const cardImg = this.getAttribute("image");
+            if(cardImg) {
+                this.shadowRoot.querySelector("img").src = cardImg;
+
+            }
         }
 
         connectedCallback() {

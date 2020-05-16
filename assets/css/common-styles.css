@@ -18,38 +18,48 @@ body h2 {
     text-align: center;
   }
 }
-body .bg-color-yellow {
+
+.bg-color-yellow {
   background-color: #ffc543;
 }
-body .color-yellow {
+
+.color-yellow {
   color: #ffc543;
 }
-body .primary-text-color {
+
+.primary-text-color {
   color: #666;
 }
-body .light-text-color {
+
+.light-text-color {
   color: #999;
 }
-body .header-color {
+
+.header-color {
   color: #494d68;
 }
-body .divider {
+
+.divider {
   width: 1px;
   background-color: #bbb;
 }
-body .hz-space-sm {
+
+.hz-space-sm {
   margin-left: 4px;
   margin-right: 4px;
 }
-body .vr-space-sm {
+
+.vr-space-sm {
   margin-top: 4px;
   margin-bottom: 4px;
 }
-body .vr-align-center {
+
+.vr-align-center {
   display: flex;
   align-items: center;
 }
-body .vr-bar-yellow {
+
+.vr-bar-yellow {
   flex: 1;
   background-color: #ffc543;
   width: 14px;
