@@ -20,7 +20,7 @@
     </div>
     <span class="hz-space-sm divider"></span>
     <div class="vr-align-center">
-        <img alt="glasses icon" class="hz-space-sm" src="./images/my-glasses.svg" />
+        <img alt="glasses icon" class="hz-space-sm" src="./assets/images/my-glasses.svg" />
         <span class="hz-space-sm">
             <slot name="reading-time" />
         </span>

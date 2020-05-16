@@ -6,14 +6,14 @@
 <link rel="stylesheet" type="text/css" href="./icomoon-styles.css">
 <link rel="stylesheet" type="text/css" href="./common-styles.css">       
  <link rel="stylesheet" type="text/css" href="./blog-common-card.css">
- <link rel="stylesheet" type="text/css" href="./blog-small-card.css">
+ <link rel="stylesheet" type="text/css" href="./assets/css/blog-small-card.css">
 
     <div class="card primary-text-color vr-align-center">
         <span class="card__number"> 
             <slot name="card__number"/>
         </span>
 
-        <img alt="blog image" src="./images/default.jpg" height="60" width="60" class="card__image" />
+        <img alt="blog image" src="./assets/images/default.jpg" height="60" width="60" class="card__image" />
         <div class="card__content">
                 <h2 class="card__header__text header-color">
                     <slot name="header" />

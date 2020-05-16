@@ -7,9 +7,9 @@ template.innerHTML = `
 <link rel="stylesheet" type="text/css" href="./icomoon-styles.css">
 <link rel="stylesheet" type="text/css" href="./common-styles.css">    
 <link rel="stylesheet" type="text/css" href="./blog-common-card.css">
-<link rel="stylesheet" type="text/css" href="./blog-big-card.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/blog-big-card.css">
     <div class="card primary-text-color">
-        <img alt="blog image" src="../images/default.jpg" class="card__image" />
+        <img alt="blog image" src="../assets/images/default.jpg" class="card__image" />
         <div class="card__content">
             <div class="card__header">
                 <h2 class="card__header__text header-color">
@@ -21,7 +21,7 @@ template.innerHTML = `
              <slot name="description"/>
             </p>
 
-            <div class="card-footer-wrapper">
+            <div class="card__footer-wrapper">
                 <div class="vr-align-center">
                     <span class="icon-pencil hz-space-sm"></span>
                     <span class="hz-space-sm">
