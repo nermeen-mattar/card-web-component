@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
 
+$yellow-color: #ffc543;
+$sm-space: 4px;
+
 .color-yellow {
-    background-color: #ffc543;
+    background-color: $yellow-color;
 }
 
 .primary-text-color {
@@ -22,13 +25,13 @@
 }
 
 .hz-space-sm {
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: $sm-space;
+    margin-right: $sm-space;
 }
 
 .vr-space-sm {
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: $sm-space;
+    margin-bottom: $sm-space;
 }
 
 .vr-align-center {
@@ -38,7 +41,7 @@
 
 .vr-bar-yellow {
     flex: 1;
-    background-color: #ffc543;
+    background-color: $yellow-color;
     width: 14px;
     margin: 0px 12px;
 }

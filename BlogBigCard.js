@@ -4,8 +4,8 @@ template.innerHTML = `
 <div>
 
 
-<link rel="stylesheet" type="text/css" href="./icomoon-styles.css">
-<link rel="stylesheet" type="text/css" href="./common-styles.css">    
+<link rel="stylesheet" type="text/css" href="./assets/css/icomoon-styles.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/common-styles.css">    
 <link rel="stylesheet" type="text/css" href="./blog-common-card.css">
 <link rel="stylesheet" type="text/css" href="./assets/css/blog-big-card.css">
     <div class="card primary-text-color">

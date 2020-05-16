@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+.color-yellow {
+  background-color: #ffc543;
+}
+
+.primary-text-color {
+  color: #666;
+}
+
+.light-text-color {
+  color: #999;
+}
+
+.header-color {
+  color: #494d68;
+}
+
+.divider {
+  width: 1px;
+  background-color: #bbb;
+}
+
+.hz-space-sm {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.vr-space-sm {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.vr-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.vr-bar-yellow {
+  flex: 1;
+  background-color: #ffc543;
+  width: 14px;
+  margin: 0px 12px;
+}
+
+/*# sourceMappingURL=common-styles.css.map */
