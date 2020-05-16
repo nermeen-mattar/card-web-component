@@ -1,0 +1,29 @@
+.card {
+    width: 354px;
+    border-bottom: 1px solid #ccc;
+
+    &__header__text {
+        font-size: 14px;
+        margin: 0px;
+    }
+    &__image {
+        border-radius: 6px;
+    }
+    &__content {
+        padding: 14px 14px 14px 0;
+    }
+    &__number {
+        font-size: 20px;
+        width: 35px;
+        color: #aaa;
+    }
+}
+
+[dir=ltr] .card__content {
+    padding: 14px 0px 14px 14px;
+}
+
+/* .small-card:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+} */
+

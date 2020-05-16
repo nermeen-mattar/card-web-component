@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+body {
+  font-size: 12px;
+  font-family: "Droid Arabic Naskh", serif;
+  text-align: right;
+  padding: 0px 40px;
+  background-color: #fbfbfb;
+}
+body[dir=ltr] {
+  text-align: left;
+}
+body .language {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  cursor: pointer;
+}
+body .blogs-page {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body .blogs-page .blogs-list {
+  flex: 1;
+  min-width: 450px;
+  /* min device width - iPhone 5*/
+  max-width: 750px;
+  margin: 0 40px;
+}
+body .blogs-page .more-blogs {
+  color: #0693ff;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+body .blogs-page .inspiring-blogs {
+  margin-top: 60px;
+}
+body .blogs-page .small-blogs-list {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+@media only screen and (max-width: 500px) {
+  body {
+    padding: 0;
+  }
+  body h1,
+body h2 {
+    text-align: center;
+  }
+  body .blogs-list {
+    min-width: 300px;
+    /* because min device width - iPhone 5*/
+    margin: 0 40px;
+  }
+}
+
+/*# sourceMappingURL=blogs-page.css.map */

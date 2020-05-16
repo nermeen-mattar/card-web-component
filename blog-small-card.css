@@ -1,34 +1,29 @@
-
-.small-card-content {
-    padding: 14px 14px 14px 0;
+.card {
+  width: 354px;
+  border-bottom: 1px solid #ccc;
+}
+.card__header__text {
+  font-size: 14px;
+  margin: 0px;
+}
+.card__image {
+  border-radius: 6px;
+}
+.card__content {
+  padding: 14px 14px 14px 0;
+}
+.card__number {
+  font-size: 20px;
+  width: 35px;
+  color: #aaa;
 }
 
-[dir=ltr] .small-card-content {
-    padding: 14px 0px 14px 14px;
-
+[dir=ltr] .card__content {
+  padding: 14px 0px 14px 14px;
 }
 
-.small-card-wrapper {
-    width: 354px;
-    border-bottom: 1px solid #ccc;
-}
-
-.card-header-text {
-    font-size: 14px;
-    margin: 0px;
-}
-
-/* .small-card-wrapper:not(:last-child) {
+/* .small-card:not(:last-child) {
     border-bottom: 1px solid #ccc;
 } */
 
-
-.card-small-image {
-    border-radius: 6px;
-}
-
-.card-number {
-    font-size: 20px;
-    width: 35px;
-    color: #aaa;
-}
+/*# sourceMappingURL=blog-small-card.css.map */

@@ -4,78 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./icomoon-styles.css">
     <link rel="stylesheet" type="text/css" href="./common-styles.css">
-    <style>
-        @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
-
-        body {
-            font-size: 12px;
-            font-family: 'Droid Arabic Naskh', serif;
-            text-align: right;
-            padding: 0px 40px;
-            background-color: #fbfbfb;
-        }
-
-        body[dir=ltr] {
-            text-align: left;
-        }
-
-        .language {
-            flex: 1;
-            display: flex;
-            justify-content: flex-end;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        .blogs-page {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .more-blogs {
-            color: #0693ff;
-            font-size: large;
-            font-weight: bold;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .blogs-list {
-            flex: 1;
-            min-width: 450px;
-            /* min device width - iPhone 5*/
-            max-width: 750px;
-            margin: 0 40px;
-        }
-
-        .inspiring-blogs {
-            margin-top: 60px;
-        }
-
-        .small-blogs-list {
-            border-top: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
-        }
-
-        @media only screen and (max-width: 500px) {
-            body {
-                padding: 0;
-            }
-
-            h1,
-            h2 {
-                text-align: center;
-            }
-
-            .blogs-list {
-                min-width: 300px;
-                /* because min device width - iPhone 5*/
-                margin: 0 40px;
-
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./blogs-page.css">
 </head>
 
 <body dir="rtl">
@@ -127,14 +56,14 @@
                         <div slot="name">ياسمين وهر</div>
                         <div slot="reading-time">٥ دقائق قراءة</div>
                         <div slot="date">١٦ أيار ٢٠٢٠</div>
-                        <div slot="card-number">٢.</div>
+                        <div slot="card__number">٢.</div>
                     </blog-small-card>
                     <blog-small-card image="./images/kids-technology.jpg">
                         <div slot="header">٣ اتجاهات ستحكم مستقبل التكنولوجيا</div>
                         <div slot="name">ياسمين وهر</div>
                         <div slot="reading-time">٥ دقائق قراءة</div>
                         <div slot="date">١٦ أيار ٢٠٢٠</div>
-                        <div slot="card-number">٣.</div>
+                        <div slot="card__number">٣.</div>
                     </blog-small-card>
                 </div>
                 <div class="vr-bar-yellow">

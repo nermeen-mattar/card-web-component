@@ -8,16 +8,16 @@ template.innerHTML = `
 <link rel="stylesheet" type="text/css" href="./common-styles.css">    
 <link rel="stylesheet" type="text/css" href="./blog-common-card.css">
 <link rel="stylesheet" type="text/css" href="./blog-big-card.css">
-    <div class="card-wrapper primary-text-color">
-        <img alt="blog image" src="../images/default.jpg" class="card-image" />
-        <div class="card-content">
-            <div class="card-header">
-                <h2 class="card-header-text header-color">
+    <div class="card primary-text-color">
+        <img alt="blog image" src="../images/default.jpg" class="card__image" />
+        <div class="card__content">
+            <div class="card__header">
+                <h2 class="card__header__text header-color">
                  <slot name="header"/>
                 </h2>
                 <span class="icon-bookmark primary-text-color"></span>
             </div>
-            <p class="card-description">
+            <p class="card__description">
              <slot name="description"/>
             </p>
 
