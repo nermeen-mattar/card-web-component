@@ -20,7 +20,7 @@ body .blogs-page .blogs-list {
   body .blogs-page .blogs-list {
     min-width: 300px;
     /* because min device width is 320px*/
-    margin: 0 40px;
+    margin: 0 5px;
   }
 }
 body .blogs-page .more-blogs {
@@ -33,9 +33,20 @@ body .blogs-page .more-blogs {
 body .blogs-page .inspiring-blogs {
   margin-top: 60px;
 }
-body .blogs-page .small-blogs-list {
+body .blogs-page .inspiring-blogs .small-blogs-list {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+}
+body .blogs-page .inspiring-blogs .blogs-and-bar-wrapper {
+  display: flex;
+}
+@media (max-width: 500px) {
+  body .blogs-page .inspiring-blogs .blogs-and-bar-wrapper {
+    display: block;
+  }
+  body .blogs-page .inspiring-blogs .blogs-and-bar-wrapper .vr-bar-yellow {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=blogs-page.css.map */
