@@ -3,17 +3,26 @@
 $yellow-color: #ffc543;
 $sm-space: 4px;
 
+html {
+    height:100%;
+}
+
 body {
+    height:100%;
     font-size: 12px;
     font-family: "Droid Arabic Naskh", serif;
     text-align: right;
-    padding: 20px 40px;
+    padding: 20px;
+    margin:0;
+    box-sizing: border-box;
     background-color: #fbfbfb;
 
     &[dir=ltr] {
         text-align: left;
     }
-
+    h1 {
+        margin: 20px;
+    }
     @media only screen and (max-width: 500px) {
         padding: 0 !important;
         h1,

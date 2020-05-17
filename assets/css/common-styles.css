@@ -1,22 +1,32 @@
 @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   font-size: 12px;
   font-family: "Droid Arabic Naskh", serif;
   text-align: right;
-  padding: 20px 40px;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
   background-color: #fbfbfb;
 }
 body[dir=ltr] {
   text-align: left;
+}
+body h1 {
+  margin: 20px;
 }
 @media only screen and (max-width: 500px) {
   body {
     padding: 0 !important;
   }
   body h1,
-  body h2 {
-      text-align: center;
-    }
+body h2 {
+    text-align: center;
+  }
 }
 
 .bg-color-yellow {

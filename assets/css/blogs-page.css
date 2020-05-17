@@ -1,23 +1,35 @@
+body[dir=ltr] .language {
+  right: 30px;
+  left: auto;
+}
 body .language {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
   font-size: 20px;
   cursor: pointer;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: auto;
 }
 body .blogs-page {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  height: 100%;
 }
-body .blogs-page .blogs-list {
+body .blogs-page .blogs-section {
   flex: 1;
+  height: 100%;
   min-width: 450px;
   max-width: 750px;
   margin: 0 40px;
 }
+body .blogs-page .blogs-section .blogs-list {
+  height: calc(100% - 130px);
+  overflow: scroll;
+  padding: 0 20px;
+}
 @media (max-width: 500px) {
-  body .blogs-page .blogs-list {
+  body .blogs-page .blogs-section {
     min-width: 300px;
     /* because min device width is 320px*/
     margin: 0 5px;
@@ -29,22 +41,26 @@ body .blogs-page .more-blogs {
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+  box-shadow: 0px 0px 20px 20px white;
+  background-color: white;
+  position: relative;
+  top: -30px;
 }
-body .blogs-page .inspiring-blogs {
+body .blogs-page .inspiring-blogs-section {
   margin-top: 60px;
 }
-body .blogs-page .inspiring-blogs .small-blogs-list {
+body .blogs-page .inspiring-blogs-section .blogs-list {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-body .blogs-page .inspiring-blogs .blogs-and-bar-wrapper {
+body .blogs-page .inspiring-blogs-section .blogs-and-bar-wrapper {
   display: flex;
 }
 @media (max-width: 500px) {
-  body .blogs-page .inspiring-blogs .blogs-and-bar-wrapper {
+  body .blogs-page .inspiring-blogs-section .blogs-and-bar-wrapper {
     display: block;
   }
-  body .blogs-page .inspiring-blogs .blogs-and-bar-wrapper .vr-bar-yellow {
+  body .blogs-page .inspiring-blogs-section .blogs-and-bar-wrapper .vr-bar-yellow {
     display: none;
   }
 }

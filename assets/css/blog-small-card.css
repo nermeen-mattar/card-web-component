@@ -17,6 +17,7 @@
   width: 35px;
   color: #aaa;
 }
+
 [dir=ltr] .card__content {
   padding: 14px 0px 14px 14px;
 }
