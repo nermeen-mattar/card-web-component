@@ -29,9 +29,9 @@ body {
             margin: 0 40px;
 
             .blogs-list {
-                height: calc(100% - 130px);
+                height: calc(100% - 140px);
                 overflow: scroll;
-                padding: 0 20px;
+                padding: 0 20px 30px 20px;
             }
 
             @media (max-width: 500px) {
